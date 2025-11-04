@@ -26,7 +26,7 @@ This repository hosts a conceptual front-end application designed to help **E-ZP
 | :--- | :--- |
 | **Name** | ivy946harriet |
 | **Email** | ivy946harriet@outlook.com |
-| **Website** | E-ZPass Delaware (https://www.ez-passde.com)
+| **Website** | E-ZPass Delaware(https://www.ez-passde.com)
 
 **Bio:** Ivy is a highly dedicated and detail-oriented **Senior Software Developer** with a passion for creating impactful, user-centric applications. With over a decade of experience in the full-stack development lifecycle, Ivy has a masterful understanding of modern coding practices, particularly in **React and Node.js ecosystems**. Ivy believes in **clean, maintainable code** and fostering a positive open-source community. Ivy's helping nature is well-known, frequently mentoring junior developers and actively contributing to projects that simplify everyday tasks, like managing E-ZPass expenses.
 
