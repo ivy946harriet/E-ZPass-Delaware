@@ -1,0 +1,42 @@
+import React from 'react';
+import './ExpenseList.css';
+
+const ExpenseItem = (props) => {
+    const formattedDate = props.date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+    return (
+        <li className="expense-item">
+            <div className="expense-item-info">
+                <h3>{props.location}</h3>
+                <p>{formattedDate}</p>
+            </div>
+            <div className="expense-item-amount">${props.amount.toFixed(2)}</div>
+        </li>
+    );
+};
+
+const ExpenseList = (props) => {
+    if (props.items.length === 0) {
+        return <p className="no-expenses">No E-ZPass tolls found for this period.</p>;
+    }
+
+    return (
+        <ul className="expense-list">
+            <h2>Transaction History</h2>
+            {props.items.map((expense) => (
+                <ExpenseItem
+                    key={expense.id}
+                    location={expense.location}
+                    amount={expense.amount}
+                    date={expense.date}
+                />
+            ))}
+        </ul>
+    );
+};
+
+export default ExpenseList;
